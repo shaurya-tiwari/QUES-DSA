@@ -1,6 +1,6 @@
 public class ValidPalindrome {
     public boolean isPalindrome(String s) {
-        String word = s.toLowerCase().replaceAll(" ", "").replaceAll(",", "").replaceAll(":", "");
+        String word = s.toLowerCase().replaceAll("[^a-zA-Z0-9]", "").replaceAll("[.,:]", "");
         int left = 0;
         int right = word.length() - 1;
         while (left <= right) {
