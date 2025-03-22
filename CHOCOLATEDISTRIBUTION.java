@@ -1,3 +1,4 @@
+// sliding window concept
 //{ Driver Code Starts
 // Initial Template for Java
 
@@ -33,7 +34,6 @@ class CHOCOLATEDISTRIBUTION {
 // } Driver Code Ends
 
 // User function Template for Java
-// sliding window concept
 class Solution {
     public int findMinDiff(ArrayList<Integer> arr, int m) {
 
