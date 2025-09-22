@@ -1,17 +1,13 @@
-import java.util.ArrayList;
+import java.util.HashSet;
 
 class Solution {
     public boolean containsDuplicate(int[] nums) {
-    ArrayList<Integer> set = new ArrayList<>();
-    for(int i=0; i<nums.length; i++){
-        set.add(i);
-        if (set.contains(nums[i])) {
-            return true;
+        HashSet<Integer> set = new HashSet<>();
+        for (int num : nums) {
+            if (!set.contains(num)) {
+                return true;
+            }
         }
-    }
-    
-        
-
         return false;
     }
 }
@@ -19,7 +15,7 @@ class Solution {
 public class containsDuplicates {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] nums = {1, 2, 3,1};
+        int[] nums = { 0, 1, 3, 4, 0, 6 };
         System.out.println(solution.containsDuplicate(nums)); // Expected output: true
     }
 }
