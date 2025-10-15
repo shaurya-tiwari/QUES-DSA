@@ -4,7 +4,7 @@ class Solution {
     public boolean containsDuplicate(int[] nums) {
         HashSet<Integer> set = new HashSet<>();
         for (int num : nums) {
-            if (!set.contains(num)) {
+            if (!set.add(num)) {
                 return true;
             }
         }
@@ -15,7 +15,7 @@ class Solution {
 public class containsDuplicates {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] nums = { 0, 1, 3, 4, 0, 6 };
+        int[] nums = { 1,2,3,4};
         System.out.println(solution.containsDuplicate(nums)); // Expected output: true
     }
 }
