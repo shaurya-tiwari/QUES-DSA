@@ -88,8 +88,45 @@ public class starpattterns {
 
     }
 
+    public void print7(int n) {
+        // *
+        // ***
+        // *****
+        // *******
+        // *********
+        // here will 3 inner loop
+        // the logic is = n-i-1 , n=tota number of row and column and i = current
+        // itration
+        // flow of print will = space star space
+        for (int i = 0; i < n; i++) {
+            // space_____________________
+            for (int j = 0; j < n - i - 1; j++) {
+                System.out.print(" ");
+            }
+            // star________________________
+            for (int j = 0; j < 2 * i + 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    public void print8(int n) {
+    
+        for (int i = 0; i < n; i++) {
+            // space_____________________
+            for (int j = 0; j < n - i - 1; j++) {
+                System.out.print(" ");
+            }
+            // star________________________
+            for (int j = 0; j < 2 * i + 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         starpattterns starpattterns = new starpattterns();
-        starpattterns.print6(5);
+        starpattterns.print7(5);
     }
 }
