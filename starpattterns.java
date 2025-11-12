@@ -110,23 +110,39 @@ public class starpattterns {
             System.out.println();
         }
     }
+
     public void print8(int n) {
-    
+
         for (int i = 0; i < n; i++) {
+
+        //     *********
+        // //   *******
+        // //    *****
+        // //     ***
+        // //      *
             // space_____________________
-            for (int j = 0; j < n - i - 1; j++) {
+            for (int j = 0; j < n + i; j++) {
                 System.out.print(" ");
             }
-            // star________________________
-            for (int j = 0; j < 2 * i + 1; j++) {
+            // star________________________fornnula - 2n-(2i+1)
+            for (int j = 0; j < 2 * n - (2 * i + 1); j++) {
                 System.out.print("*");
             }
             System.out.println();
         }
     }
 
+    public void print9(int n) {
+
+        for (int i = 0; i < n; i++) {
+
+         
+        }
+    }
+
     public static void main(String[] args) {
         starpattterns starpattterns = new starpattterns();
         starpattterns.print7(5);
+        starpattterns.print8(5);
     }
 }
