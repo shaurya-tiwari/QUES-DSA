@@ -115,11 +115,11 @@ public class starpattterns {
 
         for (int i = 0; i < n; i++) {
 
-        //     *********
-        // //   *******
-        // //    *****
-        // //     ***
-        // //      *
+            // *********
+            // // *******
+            // // *****
+            // // ***
+            // // *
             // space_____________________
             for (int j = 0; j < n + i; j++) {
                 System.out.print(" ");
@@ -136,7 +136,6 @@ public class starpattterns {
 
         for (int i = 0; i < n; i++) {
 
-         
         }
     }
 
@@ -146,3 +145,4 @@ public class starpattterns {
         starpattterns.print8(5);
     }
 }
+
